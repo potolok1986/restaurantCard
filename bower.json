@@ -1,0 +1,21 @@
+{
+  "name": "restaurantCard",
+  "authors": [
+    "Александр <potolok1986@gmail.com>"
+  ],
+  "description": "тестовое задание",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "latest",
+    "requirejs": "latest"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
