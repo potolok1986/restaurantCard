@@ -8,7 +8,8 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "angular": "latest"
+    "angular": "latest",
+    "angular-resource":"latest"
   },
   "ignore": [
     "**/.*",
