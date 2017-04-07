@@ -5,13 +5,13 @@
     <title>restaurantCard</title>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-resource/angular-resource.min.js"></script>
-    <script src="js/restaurant-card.js"></script>
-    <script src="js/components/restaurant-container.js"></script>
+    <script src="js/restaurant-cards.js"></script>
+    <script src="js/components/restaurant-cards-container/restaurant-container.js"></script>
+    <script src="js/components/restaurant-card/restaurant-card.js"></script>
     <script src="js/controller/main-ctrl.js"></script>
 </head>
 
 <body ng-controller="main-ctrl as main">
-    <h1 ng-bind="main.test"></h1>
-    <restaurant-container></restaurant-container>
+    <restaurant-cards-container cards-list="main.cardsList"></restaurant-cards-container>
 </body>
 </html>
