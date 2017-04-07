@@ -1,0 +1,1 @@
+var RestaurantCards = angular.module("restaurant-card",['ngResource','infinite-scroll']);

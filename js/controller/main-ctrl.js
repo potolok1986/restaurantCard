@@ -1,10 +1,7 @@
-RestaurantCards.controller("main-ctrl", ["$resource","$http", function ($resource, $http) {
+RestaurantCards.controller("main-ctrl", ["$resource","$http", function ($resource) {
     var main = this;
-    main.test = "hello word";
-   //https://chibbistest.ru/api/restaurants
-    $resource("response.json",{
-
-    }).get(function (data) {
-        main.cardsList = data.data
+    $resource("https://chibbistest.ru/api/restaurants").query(function (data) {
+        console.log(data[0]);
+        main.cardsList = data
     })
 }]);

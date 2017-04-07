@@ -1,3 +1,17 @@
-<article>
-    <img ng-src="{{::$ctrl.card.Logo}}"  alt="{{::$ctrl.card.Name}}">
+<article class="card">
+    <div class="card__container">
+        <div class="card__header">
+            <figure class="card__logo">
+                <img  ng-src="{{::$ctrl.card.Logo}}"  alt="{{::$ctrl.card.Name}}">
+            </figure>
+            <figcaption class="card__info">
+                <p class="card__name" ng-bind="::$ctrl.card.Name"></p>
+                <p class="card__cuisines" ng-bind="::$ctrl.card.Cuisines"></p>
+            </figcaption>
+        </div>
+        <div class="card__footer">
+
+        </div>
+
+    </div>
 </article>

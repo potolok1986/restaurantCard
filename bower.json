@@ -9,7 +9,9 @@
   "homepage": "",
   "dependencies": {
     "angular": "latest",
-    "angular-resource":"latest"
+    "angular-resource":"latest",
+    "ngInfiniteScroll":"latest"
+
   },
   "ignore": [
     "**/.*",
