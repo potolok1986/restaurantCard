@@ -7,10 +7,26 @@
             <figcaption class="card__info">
                 <p class="card__name" ng-bind="::$ctrl.card.Name"></p>
                 <p class="card__cuisines" ng-bind="::$ctrl.card.Cuisines"></p>
+                <p class="card__working-time card__working-time-open" ng-bind="::$ctrl.card.WorkingTime"></p>
             </figcaption>
         </div>
         <div class="card__footer">
-
+            <div class="card__icon-container">
+                <div class="icon"></div>
+                ОТ&nbsp;
+                <span ng-bind="::$ctrl.card.MinCost"></span>
+                &nbsp;₽
+            </div>
+            <div class="card__icon-container">
+                <div class="icon"></div>&nbsp;
+                <span ng-bind="::$ctrl.card.DeliveryCost"></span>
+                &nbsp;₽
+            </div>
+            <div class="card__icon-container">
+                <div class="icon"></div>&nbsp;
+                <span ng-bind="::$ctrl.card.DeliveryTime"></span>
+                &nbsp;мин.
+            </div>
         </div>
 
     </div>
