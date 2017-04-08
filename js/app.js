@@ -1,1 +1,1 @@
-var RestaurantCards = angular.module("restaurant-card",['ngResource','infinite-scroll']);
+var RestaurantCards = angular.module("restaurant-card",['ngResource','vs-repeat']);

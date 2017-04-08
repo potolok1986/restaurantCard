@@ -10,8 +10,7 @@
   "dependencies": {
     "angular": "latest",
     "angular-resource":"latest",
-    "ngInfiniteScroll":"latest"
-
+    "angular-vs-repeat":"latest"
   },
   "ignore": [
     "**/.*",
