@@ -1,0 +1,110 @@
+.card{
+  position: relative;
+  border-top: 1px solid  #dbdbdb;
+  box-shadow: 0 3px 9px -1px rgba(219,219,219,.6);
+  max-width: 900px;
+  overflow: hidden;
+  &__container{
+    padding: 30px 45px;
+  }
+  &__logo{
+    width: 158px;
+    img{
+      width: 100%;
+    }
+  }
+  &__header{
+    display: flex;
+  }
+  &__info{
+    padding-left: 40px;
+    width: calc(~"100% - 158px");
+  }
+  &__name{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__cuisines{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  &__rating-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__working-time{
+    font-size: 18px;
+    padding: 8px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    &-open{
+      background-color: #e6e6e6;
+    }
+    &-round{
+      background-color: #fa7217;
+      color: white;
+    }
+  }
+  &__footer{
+    border-top: 1px solid #dbdbdb;
+    margin-top: 30px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    .icon{
+      margin-right: 10px;
+    }
+  }
+  &__icon-container{
+    display: flex;
+    align-items: baseline
+  }
+
+  &__value{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &__rating{
+    display: flex;
+    align-items: baseline;
+    font-weight: 600;
+    font-size: 25px;
+    .icon{
+      margin-right: 5px;
+    }
+    .icon__rating-good + span {
+      color: #009300;
+    }
+    .icon__rating-bad + span {
+      color: #ff3636;
+    }
+  }
+  &__status{
+    width: 185px;
+    height: 75px;
+    transform: rotate(45deg);
+    padding: 0 50px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    right: -53px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-isNew{
+      background-color: #009300;
+    }
+    &-HasPaymentForPoints{
+      background-color: #fa7217;
+    }
+    &-HasSails{
+      background-color: #dc2a2a    }
+  }
+}

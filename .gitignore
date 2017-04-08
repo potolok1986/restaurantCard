@@ -1,4 +1,6 @@
 bower_components/
 .idea/
+node_modules/
 prepros-6.config
 *.css
+build/

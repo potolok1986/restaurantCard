@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="restaurant-card">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>restaurantCard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+
+</head>
+
+<body ng-controller="main-ctrl as main">
+    <restaurant-cards-container cards-list="main.cardsList"></restaurant-cards-container>
+    <div class="loader" ng-hide="main.loadingComplite">
+        <div class="loader__center-box">
+            <div class="loader__loading-body">
+                <div class="loader__spinner"></div>
+            </div>
+            <div class="loader__loading-title">
+                Идет загрузка...
+            </div>
+        </div>
+    </div>
+</body>
+</html>
