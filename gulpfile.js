@@ -28,7 +28,7 @@ var gulp = require('gulp'),
         watch: {
             html: 'src/**/*.html',
             js: 'src/js/**/*.js',
-            style: 'src/style/**/*.less'
+            style: 'src/less/**/*.less'
         },
         clean: './build'
     },
@@ -92,9 +92,6 @@ gulp.task('watch', function(){
     });
     watch([path.watch.js], function() {
         gulp.start('js:build');
-    });
-    watch([path.watch.img], function() {
-        gulp.start('image:build');
     });
 });
 gulp.task('webserver', function () {
